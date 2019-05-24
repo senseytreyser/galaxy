@@ -1,0 +1,13 @@
+﻿.container{
+    background-color: $bg_color;
+    display: flex;
+    width: 100%;
+
+    &__nav{
+        width: 30%;
+    }
+
+    &__main{
+        width: 70%;
+    }
+}

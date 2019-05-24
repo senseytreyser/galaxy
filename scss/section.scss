@@ -1,0 +1,14 @@
+﻿.section{
+    &__img{
+        width: 100%;
+    }
+    &__header{
+
+    }
+    &__title{
+        &-small,
+        &-large{
+            color: $title_color;
+        }
+    }
+}
