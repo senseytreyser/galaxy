@@ -1,0 +1,47 @@
+﻿.nav{
+    border-right: 1px solid $border_color;
+    background-color: $bg_color;
+    
+    &__list{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 216px 0 0 0;
+        padding: 0 21px 0 25px;
+    }
+    &__item{
+        
+    }
+    &__link{
+        display: inline-block;
+        width: 100%;
+        color: $text_color;
+        font-family: $gotham_book;
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        line-height: 31px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover{
+            color: $link_hvr_color; 
+        }
+
+        &:hover::before{
+            content:"";
+            display: block;
+            border-top: 1px solid $border_color;
+            position: absolute;
+            left: -35px;
+            width: 30px;
+            top: 15px;
+        }
+
+        &:active{
+            color: $text_color;
+        }
+    }
+}
+

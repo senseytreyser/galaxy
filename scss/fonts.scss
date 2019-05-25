@@ -1,1 +1,6 @@
-﻿
+﻿@font-face{
+    src: url(../fonts/gotham-book.ttf);
+    font-family: gotham-book;
+}
+
+$gotham_book: gotham-book, Arial, Helvetica, sans-serif;

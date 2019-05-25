@@ -1,13 +1,34 @@
 ﻿.container{
     background-color: $bg_color;
     display: flex;
+    position: relative;
     width: 100%;
+    z-index: 1;
 
     &__nav{
-        width: 30%;
+        flex: 0 0 auto;
+        box-sizing: border-box;
+        width: 370px;
+        position: relative;
+        z-index: 4;
+    }
+
+    &__second-nav{
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        top: 0;
+        width: 370px;
+        z-index: 3;
+        &.open{
+            left: 370px;
+        }
     }
 
     &__main{
-        width: 70%;
+        //width: 80%;
+        position: relative;
+        z-index: 2;
     }
 }
