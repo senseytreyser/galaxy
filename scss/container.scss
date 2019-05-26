@@ -5,11 +5,16 @@
     width: 100%;
     z-index: 1;
 
+    &__nav-button{
+        display: none;
+    }
+
     &__nav{
         flex: 0 0 auto;
         box-sizing: border-box;
         width: 370px;
         position: relative;
+        transition: right 0.5s;
         z-index: 4;
     }
 
@@ -31,5 +36,41 @@
         //width: 80%;
         position: relative;
         z-index: 2;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .container{
+        flex-direction: column;
+        overflow: hidden;
+
+        &__nav-button{
+            display: block;
+            align-self: flex-end;
+            margin: 40px 21px;
+        }  
+
+        &__nav{
+            $width: 370px;
+            
+            background-color: $bg_color;
+            position: absolute;
+            top: 0;
+            right: - $width;
+            bottom: 0;
+            width: $width;
+            &.open{
+                right: 0;
+            }
+        }
+
+        &__second-nav{
+            display: none;
+        }
+
+        &__main{
+            width: 100%;
+            margin-bottom: 40px;
+        }
     }
 }
